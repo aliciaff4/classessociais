@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(195, 113, 219);
+}
+
+h1::before{
+    content: "Tema: ";
+    color: rgb(235, 184, 240);
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* background-color: darkgray; */
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(243, 197, 197);
+    border-radius: 30px;
+}
+
+nav ul li a:active{
+    background-color: rgb(204, 144, 144);
+}
+
+nav ul li a:visited{
+    background-color: rgb(209, 124, 164);
+}
+
+p::first-letter{
+    color: black;
+    /* font-weight: 549; */
+    font-size: 1.2em;
+}
+
+p::selection{
+    background-color: rgb(255, 196, 237);
+    color: rgb(90, 1, 117);
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+}
+
+h2 {
+    color: #9340a3;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.card {
+    text-align: center;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        /* flex-direction: column; */
+        font-size: 15px;
+        
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        /* margin-left: 12px; */
+    }
+
+    
+}
+
+footer{
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    background-color: rgb(235, 184, 240);
+}
